@@ -1,1 +1,8 @@
 
+const cardArray = [
+    {
+        
+
+
+    }
+]
