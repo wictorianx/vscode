@@ -30,7 +30,7 @@ const griD = document.querySelector('#grid')
 
 function createBoard (){
     for (let i = 0; i<10; i++){
-    const card = document.createElement('img')
+    let card = document.createElement('img')
     card.setAttribute('src',"alien.jpg")
     card.setAttribute('data-id',i)
     griD.appendChild(card)}
