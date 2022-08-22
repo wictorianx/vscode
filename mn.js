@@ -29,12 +29,10 @@ cardArray.sort(() => 0.5-Math.random())
 const griD = document.querySelector('#grid')
 
 function createBoard (){
-    for (let i = 0; i<10; i++){
+    for (let i = 0; i<cardArray.length; i++){
     let card = document.createElement('img')
     card.setAttribute('src',"alien.jpg")
     card.setAttribute('data-id',i)
     griD.appendChild(card)}
-
-
-
 }
+createBoard()
