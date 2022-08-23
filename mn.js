@@ -56,7 +56,7 @@ const cardsChosen = []
 function createBoard (){
     for (let i = 0; i<cardArray.length; i++){
     let card = document.createElement('img')
-    card.setAttribute('src',"blue giant.jpg")
+    card.setAttribute('src',"blue_giant.jpg")
     card.setAttribute('data-id',i)
     card.addEventListener("click",flipCard)
     griD.appendChild(card)}
