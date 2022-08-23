@@ -1,4 +1,3 @@
-
 const cardArray = [
     {
         name:"alien",
@@ -62,11 +61,16 @@ function createBoard (){
     griD.appendChild(card)}
 }
 createBoard()
-
+function checkMatch(){
+    
+}
 function flipCard(){
     let CardId = this.getAttribute("data-id")
     cardsChosen.push(cardArray[CardId].name)
     this.setAttribute("src",cardArray[CardId.img])
+    if (cardsChosen.length === 2){
+        setTimeout(checkMatch,500)
+    }
 
 
 
